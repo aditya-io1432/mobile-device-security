@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Device Security — Aditya</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- ============ SIDEBAR RAIL ============ -->
+<aside class="rail" id="rail">
+  <div class="rail-top">
+    <div class="rail-logo">
+      <span class="rail-logo-hex">◈</span>
+      <span class="rail-logo-text">MDS<em>//</em></span>
+    </div>
+  </div>
+
+  <div class="rail-progress" aria-hidden="true"><div class="rail-progress-fill" id="railProgressFill"></div></div>
+
+  <nav class="rail-nav" aria-label="Section navigation">
+    <button data-target="home" class="active"><span class="rn-idx">00</span><span class="rn-label">Home</span></button>
+    <button data-target="about"><span class="rn-idx">01</span><span class="rn-label">What It Is</span></button>
+    <button data-target="pillars"><span class="rn-idx">02</span><span class="rn-label">Core Pillars</span></button>
+    <button data-target="threats"><span class="rn-idx">03</span><span class="rn-label">Threats</span></button>
+    <button data-target="attackpath"><span class="rn-idx">04</span><span class="rn-label">Attack Path</span></button>
+    <button data-target="defense"><span class="rn-idx">05</span><span class="rn-label">Defense Tech</span></button>
+    <button data-target="simulator"><span class="rn-idx">06</span><span class="rn-label">Simulator</span></button>
+    <button data-target="checklist"><span class="rn-idx">07</span><span class="rn-label">Checklist</span></button>
+    <button data-target="summary"><span class="rn-idx">08</span><span class="rn-label">Summary</span></button>
+    <button data-target="contact"><span class="rn-idx">09</span><span class="rn-label">Questions</span></button>
+  </nav>
+
+  <div class="rail-bottom">
+    <p class="rail-id">ADITYA</p>
+    <p class="rail-sub">BCA / Computer Science<br>Shivaji University, Kolhapur</p>
+  </div>
+</aside>
+
+<!-- mobile top bar -->
+<header class="topbar" id="topbar">
+  <div class="topbar-logo">◈ MDS</div>
+  <div class="topbar-progress"><div class="topbar-progress-fill" id="topProgressFill"></div></div>
+</header>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main id="content">
+
+  <!-- 00 HOME -->
+  <section class="panel hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <p class="tag reveal">// SEMINAR — CYBER SECURITY</p>
+    <h1 class="hero-title reveal">MOBILE DEVICE<br><span>SECURITY</span></h1>
+    <p class="hero-line reveal">Secure Today, Safe Tomorrow.</p>
+    <p class="hero-desc reveal">Protecting smartphones, tablets and personal data from unauthorized access, malware and cyber threats.</p>
+    <div class="hero-quote reveal">
+      <span class="qmark">"</span>Your device. Your data. Your responsibility.<span class="qmark">"</span>
+    </div>
+    <div class="hero-meta reveal">
+      <div><span class="hm-label">Presented by</span><span class="hm-value">Aditya</span></div>
+      <div><span class="hm-label">Class</span><span class="hm-value">BCA / Computer Science</span></div>
+      <div><span class="hm-label">Institute</span><span class="hm-value">Shivaji University, Kolhapur</span></div>
+    </div>
+    <div class="scroll-down reveal"><span></span>scroll</div>
+  </section>
+
+  <!-- 01 ABOUT -->
+  <section class="panel" id="about">
+    <p class="sec-idx reveal">01 / What It Is</p>
+    <h2 class="sec-title reveal">What Is Mobile Device Security?</h2>
+    <div class="about-grid reveal">
+      <p class="about-lead">Mobile device security protects <b>devices</b>, <b>applications</b>, <b>networks</b> and <b>personal data</b> from unauthorized access, malware and cyber threats.</p>
+      <ul class="about-list">
+        <li><span class="dot"></span>Everything from banking apps to private photos lives on one unlocked screen.</li>
+        <li><span class="dot"></span>A single compromised phone can expose contacts, accounts, and location.</li>
+        <li><span class="dot"></span>Mobile security is layered — device, app, network and data protection together.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 02 CORE PILLARS (radial diagram) -->
+  <section class="panel" id="pillars">
+    <p class="sec-idx reveal">02 / Core Pillars</p>
+    <h2 class="sec-title reveal">What Mobile Security Covers</h2>
+
+    <div class="radial reveal" id="radial">
+      <div class="radial-center"><span>MOBILE<br>SECURITY</span></div>
+      <div class="radial-node n1"><span class="rn-tag">AUTH</span>Authentication</div>
+      <div class="radial-node n2"><span class="rn-tag">PRIV</span>Privacy</div>
+      <div class="radial-node n3"><span class="rn-tag">ACCESS</span>Secure Access</div>
+      <div class="radial-node n4"><span class="rn-tag">DATA</span>Data Protection</div>
+      <div class="radial-node n5"><span class="rn-tag">THREAT</span>Threat Prevention</div>
+      <svg class="radial-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <line x1="50" y1="50" x2="50" y2="6" />
+        <line x1="50" y1="50" x2="88" y2="30" />
+        <line x1="50" y1="50" x2="76" y2="88" />
+        <line x1="50" y1="50" x2="24" y2="88" />
+        <line x1="50" y1="50" x2="12" y2="30" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- 03 THREATS (horizontal scroller) -->
+  <section class="panel" id="threats">
+    <p class="sec-idx reveal">03 / Know the Enemy</p>
+    <h2 class="sec-title reveal">Common Mobile Security Threats</h2>
+    <p class="sec-sub reveal">Drag or scroll sideways →</p>
+
+    <div class="threat-scroller reveal">
+      <div class="threat-card"><span class="tc-num">01</span><h3>Malware</h3><p>Harmful software that damages your device.</p></div>
+      <div class="threat-card"><span class="tc-num">02</span><h3>Phishing</h3><p>Fake messages trick you into sharing personal information.</p></div>
+      <div class="threat-card"><span class="tc-num">03</span><h3>Malicious Apps</h3><p>Unsafe apps steal data or take control of your device.</p></div>
+      <div class="threat-card"><span class="tc-num">04</span><h3>Data Theft</h3><p>Hackers steal your personal data, photos, or documents.</p></div>
+      <div class="threat-card"><span class="tc-num">05</span><h3>Unsecured Wi-Fi</h3><p>Open or weak Wi-Fi can let hackers steal your data.</p></div>
+      <div class="threat-card"><span class="tc-num">06</span><h3>Device Loss / Theft</h3><p>Losing your device can lead to data misuse or access.</p></div>
+    </div>
+  </section>
+
+  <!-- 04 ATTACK PATH -->
+  <section class="panel" id="attackpath">
+    <p class="sec-idx reveal">04 / The Attack Path</p>
+    <h2 class="sec-title reveal">How Does a Mobile Attack Happen?</h2>
+
+    <div class="path reveal">
+      <div class="path-line" aria-hidden="true"></div>
+      <div class="path-step"><span class="ps-dot"></span><h4>Attacker</h4><p>Chooses an entry point to target you.</p></div>
+      <div class="path-step"><span class="ps-dot"></span><h4>Entry Vector</h4><p>Phishing · malicious app · unsafe Wi-Fi</p></div>
+      <div class="path-step"><span class="ps-dot"></span><h4>Device Compromised</h4><p>The device's defenses are breached.</p></div>
+      <div class="path-step alert"><span class="ps-dot"></span><h4>Data Theft</h4><p>Passwords, photos, bank details, personal info.</p></div>
+    </div>
+  </section>
+
+  <!-- 05 DEFENSE TECH + SCENARIO -->
+  <section class="panel" id="defense">
+    <p class="sec-idx reveal">05 / Defense Tech</p>
+    <h2 class="sec-title reveal">Mobile Security Technologies</h2>
+
+    <div class="hexrow reveal">
+      <div class="hexcard"><span class="hex">⬡</span><h4>Encryption</h4><p>Scrambles stored data without the right key.</p></div>
+      <div class="hexcard"><span class="hex">⬡</span><h4>Biometric Auth</h4><p>Fingerprint or face unlock tied to you.</p></div>
+      <div class="hexcard"><span class="hex">⬡</span><h4>VPN</h4><p>Encrypts your connection on public networks.</p></div>
+      <div class="hexcard"><span class="hex">⬡</span><h4>Mobile Antivirus</h4><p>Scans for and blocks malicious software.</p></div>
+      <div class="hexcard"><span class="hex">⬡</span><h4>Secure Boot</h4><p>Verifies software wasn't tampered with at startup.</p></div>
+    </div>
+
+    <h3 class="sub-heading reveal">A Real-Life Scenario</h3>
+    <div class="thread reveal">
+      <div class="thread-item"><span class="ti-dot"></span><div><b>Fake Message</b><p>A text claims your bank account will be deactivated today.</p></div></div>
+      <div class="thread-item"><span class="ti-dot"></span><div><b>Malicious Link</b><p>A look-alike login page opens, styled just like the real bank.</p></div></div>
+      <div class="thread-item"><span class="ti-dot warn"></span><div><b>Credentials Entered</b><p>Victim logs in — the attacker now has the real password.</p></div></div>
+      <div class="thread-item outcome"><span class="ti-dot bad"></span><div><b>Unauthorized Access → Data Theft</b><p>Attacker logs in, drains accounts, and harvests contacts and messages.</p></div></div>
+    </div>
+    <p class="footline reveal">A fake message, a look-alike page, one tap — that's often the whole attack. <span class="hl">Think before you click.</span></p>
+  </section>
+
+  <!-- 06 SIMULATOR -->
+  <section class="panel" id="simulator">
+    <p class="sec-idx reveal">06 / Try It Yourself</p>
+    <h2 class="sec-title reveal">Spot the Fake Message</h2>
+    <p class="sec-sub reveal">Tap the highlighted parts of the message below. <span class="mono">Safe demo — no real links.</span></p>
+
+    <div class="sim-wrap reveal">
+      <div class="phone-mock">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="sms-bubble">
+            <p class="sms-sender">
+              <button type="button" class="flag" data-flag="sender" data-explain="Unverified sender ID — a real bank's SMS comes from a registered header, not a generic name.">AXIS BANK</button>
+            </p>
+            <p>
+              <button type="button" class="flag" data-flag="greeting" data-explain="Generic greeting — a real bank message usually includes your name or last 4 digits of your account.">Dear Customer,</button>
+            </p>
+            <p>
+              <button type="button" class="flag" data-flag="urgency" data-explain="Urgency and pressure to act — 'today' and 'deactivated' push you to react before you think.">Your account will be deactivated today.</button>
+              Please verify now:
+            </p>
+            <p>
+              <button type="button" class="flag link" data-flag="link" data-explain="Look-alike domain — this is not the bank's real domain. Always check the actual URL, not just the text.">http://axis-secure-login.com</button>
+            </p>
+            <p>
+              <button type="button" class="flag" data-flag="request" data-explain="Request for banking credentials — no legitimate bank asks you to 'log in to verify' through a text-message link.">Login with your registered mobile number and password to continue.</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sim-log">
+        <p class="sim-log-title"><span id="flagCounter">0 / 5</span> flags found</p>
+        <div id="simLogBody" class="sim-log-body">
+          <p class="sim-log-empty">$ waiting for input_<span class="cursor"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 CHECKLIST -->
+  <section class="panel" id="checklist">
+    <p class="sec-idx reveal">07 / Stay Safe</p>
+    <h2 class="sec-title reveal">How to Secure a Mobile Device</h2>
+    <p class="sec-sub reveal">Tap each item as you put it in place.</p>
+
+    <div class="check-grid reveal">
+      <button type="button" class="check-item"><span class="ci-box"></span>Strong Password / PIN</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>Biometric Lock</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>Regular Updates</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>App Permissions Reviewed</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>Device Encryption On</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>Secure Wi-Fi Only</button>
+      <button type="button" class="check-item"><span class="ci-box"></span>Regular Backups</button>
+    </div>
+    <p class="check-progress" id="checkProgress">0 / 7 secured</p>
+  </section>
+
+  <!-- 08 SUMMARY -->
+  <section class="panel" id="summary">
+    <p class="sec-idx reveal">08 / Wrap Up</p>
+    <h2 class="sec-title reveal">Stay Secure. Stay Smart.</h2>
+
+    <div class="terminal reveal">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> threats --list</p>
+        <p class="out red">Malware, Phishing, Malicious Apps, Data Theft, Unsecured Wi-Fi, Device Loss/Theft</p>
+        <p><span class="prompt">$</span> habits --daily</p>
+        <p class="out cyan">Lock Device, Update Regularly, Install Trusted Apps, Use Secure Networks, Protect Data, Think Before You Click</p>
+        <p><span class="prompt">$</span> echo $TAKEAWAY</p>
+        <p class="out">Your mobile device is a gateway to your digital life — protect it.<span class="cursor"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 CONTACT / QUESTIONS -->
+  <section class="panel contact" id="contact">
+    <p class="tag reveal">// OPEN FLOOR</p>
+    <h2 class="hero-title small reveal">ANY<br>QUESTIONS?</h2>
+    <p class="hero-desc reveal">If you have any doubts about my topic or explanation, feel free to ask.</p>
+    <p class="hero-quote reveal"><span class="qmark">"</span>Cyber security is not just a choice, it's a responsibility.<span class="qmark">"</span></p>
+    <p class="footline reveal">Thank you for your attention.</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
